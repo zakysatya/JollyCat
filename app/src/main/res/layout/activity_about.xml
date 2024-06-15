@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    tools:context=".AboutActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="25dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/cardView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="20dp"
+
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/round_arrow_back_ios_24"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/tvJollyCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:gravity="left"
+                android:text="About Us"
+                android:textColor="@color/my_primary_variant"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/my_secondary_variant"
+            app:cardCornerRadius="10dp">
+
+            <fragment
+                android:id="@+id/mapFragmentView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_primary_variant"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:text="Company Name"/>
+        <TextView
+            android:id="@+id/companyDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_primary_variant"
+            android:textSize="14sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10dp"
+            android:text="Company Description"/>
+
+        <Button
+            android:id="@+id/btn_maps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/my_secondary_variant"
+
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Open in maps"
+            android:textColor="@color/my_secondary"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    tools:context=".fragment.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJollyCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:gravity="center"
+            android:text="JollyCat"
+            android:textColor="@color/my_primary_variant"
+            android:textSize="40sp" />
+        <TextView
+            android:id="@+id/tvDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:gravity="center"
+            android:text="By Zaky Satya G."
+            android:textColor="@color/my_primary_variant"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/my_secondary_variant"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="40dp">
+
+            <TextView
+                android:id="@+id/lblAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:gravity="center"
+                android:text="Account"
+                android:textColor="@color/my_primary_variant"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/rounded_corner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:paddingVertical="2dp"
+                    android:text="Username"
+                    android:textColor="@color/my_primary_variant"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:hint="Username"
+                    android:padding="12sp"
+                    android:textColor="@color/my_primary"
+                    android:textColorHint="@color/my_primary_variant"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:paddingVertical="2dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/my_primary_variant"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:hint="Phone Number"
+                    android:padding="12sp"
+                    android:textColor="@color/my_primary"
+                    android:textColorHint="@color/my_primary_variant"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/transparent_background"
+
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="History"
+            android:textColor="@color/my_primary_variant"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/transparent_background"
+
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="About Us"
+            android:textColor="@color/my_primary_variant"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/my_secondary_variant"
+
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Logout"
+            android:textColor="@color/my_secondary"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>
